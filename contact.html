@@ -193,6 +193,19 @@
 
   form.hide { display: none; }
 
+  .back-home {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-dim);
+    text-decoration: none;
+    z-index: 10;
+  }
+
+  .back-home:hover { color: var(--text); }
+
   /* ============ Responsive ============ */
   @media (max-width: 480px) {
     .contact-title { font-size: 26px; }
@@ -207,6 +220,8 @@
   <button type="button" data-lang="es" class="active">ES</button>
   <button type="button" data-lang="en">EN</button>
 </div>
+
+<a href="index.html" class="back-home" data-i18n="backHome">← Inicio</a>
 
 <div class="contact-wrap">
   <h1 class="contact-title" data-i18n="title">Contactame</h1>
@@ -259,6 +274,7 @@
   // ============================================================
   const STRINGS = {
     es: {
+      backHome: "← Inicio",
       title: "Contactame",
       subtitle: "Contame tu proyecto y te respondo a la brevedad.",
       labelName: "Nombre completo",
@@ -272,6 +288,7 @@
       budgets: ["Menos de $50.000", "$50.000–$150.000", "$150.000–$300.000", "Más de $300.000"]
     },
     en: {
+      backHome: "← Home",
       title: "Contact me",
       subtitle: "Tell me about your project and I'll get back to you shortly.",
       labelName: "Full name",

@@ -7,6 +7,7 @@
       "nav.skills": "Habilidades",
       "nav.experience": "Experiencia",
       "nav.portfolio": "Portfolio",
+      "nav.contact": "Contacto",
       "nav.home": "Inicio",
 
       "home.media.title": "Tu foto o video va acá",
@@ -95,6 +96,7 @@
       "nav.skills": "Skills",
       "nav.experience": "Experience",
       "nav.portfolio": "Portfolio",
+      "nav.contact": "Contact",
       "nav.home": "Home",
 
       "home.media.title": "Your photo or video goes here",
