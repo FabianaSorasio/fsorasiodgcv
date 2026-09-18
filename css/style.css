@@ -531,6 +531,10 @@ img { max-width: 100%; display: block; }
 
 .social-bar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 
+.home-contact-left {
+  margin-left: calc(44% + 40px + 41px);
+}
+
 .home-contact-right {
   display: flex;
   align-items: center;
@@ -577,6 +581,7 @@ img { max-width: 100%; display: block; }
   .page-title { font-size: 30px; }
 
   .contact-bar { flex-direction: column; gap: 24px; }
+  .home-contact-left { margin-left: 0; }
 
   .social-bar {
     position: fixed;
