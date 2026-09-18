@@ -576,6 +576,7 @@ img { max-width: 100%; display: block; }
   .cv-figure-img { display: none; }
   .logo-mark-img { display: none; }
   .home-lang-switch { position: static; margin-bottom: 16px; display: inline-flex; }
+  .top-nav-right img { display: none; }
 
   .page { padding-bottom: 140px; }
   .page-title { font-size: 30px; }
