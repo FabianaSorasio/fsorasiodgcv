@@ -85,7 +85,9 @@
 
       "contact.title": "Contactame",
       "contact.tag": "#disponible",
-      "social.phone": "Teléfono",
+      "social.phone": "WhatsApp",
+      "media.mute": "Silenciar",
+      "media.unmute": "Activar sonido",
     },
     en: {
       "notice": "For the best experience, please view this portfolio on a desktop or laptop screen.",
@@ -171,7 +173,9 @@
 
       "contact.title": "Contact me",
       "contact.tag": "#opentowork",
-      "social.phone": "Phone",
+      "social.phone": "WhatsApp",
+      "media.mute": "Mute",
+      "media.unmute": "Unmute",
     }
   };
 
