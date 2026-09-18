@@ -318,6 +318,13 @@ img { max-width: 100%; display: block; }
   opacity: 0.95;
 }
 
+.logo-mark-img {
+  position: absolute;
+  top: 4px;
+  right: 150px;
+  width: 46px;
+}
+
 .cv-figure-img {
   position: absolute;
   right: 0;
@@ -550,6 +557,7 @@ img { max-width: 100%; display: block; }
   .hero-nav-link { font-size: 21px; }
   .hearts-cluster-img { display: none; }
   .cv-figure-img { display: none; }
+  .logo-mark-img { display: none; }
 
   .page { padding-bottom: 140px; }
   .page-title { font-size: 30px; }
