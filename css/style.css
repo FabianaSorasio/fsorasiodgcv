@@ -218,6 +218,7 @@ img { max-width: 100%; display: block; }
 }
 
 .media-placeholder {
+  position: relative;
   width: 100%;
   max-width: 320px;
   aspect-ratio: 311 / 554;
@@ -314,6 +315,14 @@ img { max-width: 100%; display: block; }
   right: 0;
   width: 140px;
   opacity: 0.95;
+}
+
+.cv-figure-img {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  width: 130px;
+  pointer-events: none;
 }
 
 /* ── About page ───────────────────────────────── */
@@ -539,6 +548,7 @@ img { max-width: 100%; display: block; }
   .hero-nav-list { gap: 30px; }
   .hero-nav-link { font-size: 21px; }
   .hearts-cluster-img { display: none; }
+  .cv-figure-img { display: none; }
 
   .page { padding-bottom: 140px; }
   .page-title { font-size: 30px; }
