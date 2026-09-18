@@ -334,25 +334,18 @@
   applyLang(DEFAULT_LANG);
 
   // ============================================================
-  // 2) FORM SUBMISSION
-  //    Right now this just shows the confirmation message locally —
-  //    no email is actually sent yet. To wire it up to your inbox,
-  //    pick ONE of these and follow the 3 lines of instructions:
+  // 2) FORM SUBMISSION — wired to Formspree (no account/password needed).
+  //    Messages are sent to: fsorasio.dgcv.trabajos@gmail.com
   //
-  //    OPTION A — Formspree (recommended, free, no code changes below):
-  //      1. Create a free account at https://formspree.io and a new form.
-  //      2. Copy the endpoint it gives you (looks like
-  //         https://formspree.io/f/xxxxabcd).
-  //      3. Replace the line marked FORM_ENDPOINT below with that URL,
-  //         and change the fetch() call's "TODO" block to actually POST.
+  //    IMPORTANT ONE-TIME STEP: the very first time someone submits this
+  //    form (test it yourself now), Formspree sends a confirmation email
+  //    to that address. Click the confirm link in it — after that, every
+  //    future submission is delivered straight to the inbox automatically.
   //
-  //    OPTION B — mailto fallback (no signup, opens the visitor's own
-  //      email app instead of sending silently):
-  //      Replace the whole submit handler body with:
-  //        const s = new URLSearchParams(new FormData(form)).toString();
-  //        window.location.href = `mailto:tu-mail@dominio.com?subject=Nuevo%20contacto&body=${s}`;
+  //    To change the destination email later, just edit the address in
+  //    the FORM_ENDPOINT URL below (no dashboard/login required).
   // ============================================================
-  const FORM_ENDPOINT = ""; // <-- paste your Formspree endpoint here (Option A)
+  const FORM_ENDPOINT = "https://formspree.io/f/fsorasio.dgcv.trabajos@gmail.com";
 
   const form = document.getElementById("contactForm");
   const successMessage = document.getElementById("successMessage");
