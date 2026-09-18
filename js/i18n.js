@@ -83,7 +83,7 @@
 
       "case.back": "← Volver al portfolio",
 
-      "contact.title": "Contactame",
+      "contact.title": "¡Contactame!",
       "contact.tag": "#disponible",
       "social.phone": "WhatsApp",
       "media.mute": "Silenciar",
@@ -171,7 +171,7 @@
 
       "case.back": "← Back to portfolio",
 
-      "contact.title": "Contact me",
+      "contact.title": "Contact me!",
       "contact.tag": "#opentowork",
       "social.phone": "WhatsApp",
       "media.mute": "Mute",
