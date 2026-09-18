@@ -100,7 +100,7 @@ img { max-width: 100%; display: block; }
 
 .top-nav-link {
   font-family: var(--font-head);
-  font-weight: 900;
+  font-weight: 500;
   font-size: 14px;
   color: var(--text);
   text-decoration: none;
@@ -108,7 +108,8 @@ img { max-width: 100%; display: block; }
   transition: color 0.2s;
 }
 
-.top-nav-link:hover, .top-nav-link.active { color: var(--accent); }
+.top-nav-link:hover { color: var(--accent); }
+.top-nav-link.active { color: var(--accent); font-weight: 900; }
 
 .top-nav-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 
