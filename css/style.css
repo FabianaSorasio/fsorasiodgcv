@@ -527,10 +527,9 @@ img { max-width: 100%; display: block; }
 
 .social-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 5px;
-  width: 46px;
+  justify-content: center;
+  width: 42px;
   text-decoration: none;
   color: var(--text);
 }
