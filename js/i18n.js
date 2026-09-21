@@ -9,6 +9,7 @@
       "nav.portfolio": "Portfolio",
       "nav.contact": "Contacto",
       "nav.home": "Inicio",
+      "hero.tagline": "Activá el potencial<br>de tu marca<br>con diseño estratégico.",
 
       "home.media.title": "Tu foto o video va acá",
       "home.media.hint": "Reemplazá este placeholder en el HTML",
@@ -98,6 +99,7 @@
       "nav.portfolio": "Portfolio",
       "nav.contact": "Contact",
       "nav.home": "Home",
+      "hero.tagline": "Activate your brand's<br>potential with<br>strategic design.",
 
       "home.media.title": "Your photo or video goes here",
       "home.media.hint": "Replace this placeholder in the HTML file",
@@ -204,7 +206,7 @@
     const dict = STRINGS[lang] || STRINGS[DEFAULT_LANG];
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      if (dict[key] !== undefined) el.textContent = dict[key];
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
     });
   }
 

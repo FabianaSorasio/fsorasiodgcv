@@ -291,7 +291,17 @@ img { max-width: 100%; display: block; }
 .mute-toggle.is-unmuted .icon-muted { display: none; }
 .mute-toggle.is-unmuted .icon-unmuted { display: block; }
 
-.hero-right { flex: 1; padding-top: 190px; position: relative; }
+.hero-right { flex: 1; padding-top: 140px; position: relative; }
+
+.hero-tagline {
+  font-family: var(--font-head);
+  font-style: italic;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.25;
+  color: var(--text);
+  margin: 0 0 40px;
+}
 
 .hero-nav-list {
   list-style: none;
