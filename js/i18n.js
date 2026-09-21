@@ -10,7 +10,7 @@
       "nav.testimonials": "Testimonios",
       "nav.contact": "Contacto",
       "nav.home": "Inicio",
-      "hero.tagline": "Activá el potencial<br>de tu marca<br>con diseño estratégico.",
+      "hero.tagline": "Impulsá tu marca<br>con diseño<br>estratégico.",
       "testimonials.title": "Testimonios",
       "testimonials.intro": "Lo que dicen los clientes que ya trabajaron conmigo.",
 
@@ -103,7 +103,7 @@
       "nav.testimonials": "Testimonials",
       "nav.contact": "Contact",
       "nav.home": "Home",
-      "hero.tagline": "Activate your brand's<br>potential with<br>strategic design.",
+      "hero.tagline": "Boost your brand<br>with strategic<br>design.",
       "testimonials.title": "Testimonials",
       "testimonials.intro": "What clients who've worked with me have to say.",
 
