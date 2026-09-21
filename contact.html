@@ -82,6 +82,36 @@
     padding-right: 36px;
   }
 
+  .field input[type="file"] {
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+
+  .field input[type="file"]::file-selector-button {
+    font-family: var(--font-head);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text);
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .field input[type="file"]::file-selector-button:hover {
+    background: rgba(255,255,255,0.18);
+  }
+
+  .field-hint {
+    margin: 0;
+    font-size: 11px;
+    color: var(--text-dim);
+    opacity: 0.7;
+  }
+
   form button[type="submit"] {
     font-family: var(--font-head);
     font-size: 15px;
@@ -195,6 +225,12 @@
         <textarea id="message" name="message" required></textarea>
       </div>
 
+      <div class="field">
+        <label for="attachment" data-i18n="labelAttachment">Adjuntar foto o documento (opcional)</label>
+        <input type="file" id="attachment" name="attachment" accept="image/*,.pdf,.doc,.docx">
+        <p class="field-hint" data-i18n="attachmentHint">Referencias, boceto o brief. Máximo 10 MB.</p>
+      </div>
+
       <button type="submit" data-i18n="submit">Enviar</button>
     </form>
 
@@ -225,6 +261,8 @@
       labelProjectType: "Tipo de proyecto",
       labelBudget: "Presupuesto aproximado",
       labelMessage: "Contame tu proyecto",
+      labelAttachment: "Adjuntar foto o documento (opcional)",
+      attachmentHint: "Referencias, boceto o brief. Máximo 10 MB.",
       submit: "Enviar",
       success: "¡Gracias! Te respondo en menos de 48 horas.",
       projectTypes: ["Identidad visual", "Redes sociales", "Diseño web", "Otro"],
@@ -238,6 +276,8 @@
       labelProjectType: "Project type",
       labelBudget: "Approximate budget",
       labelMessage: "Tell me about your project",
+      labelAttachment: "Attach a photo or document (optional)",
+      attachmentHint: "References, a sketch, or a brief. Max 10 MB.",
       submit: "Send",
       success: "Thank you! I'll get back to you within 48 hours.",
       projectTypes: ["Visual identity", "Social media", "Web design", "Other"],
