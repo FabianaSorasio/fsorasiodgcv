@@ -298,10 +298,13 @@
     e.preventDefault();
 
     try {
+      // Sent as native FormData (not JSON) on purpose: this avoids a
+      // CORS "preflight" request that some browsers/extensions block,
+      // which was silently dropping real submissions before.
       await fetch(FORM_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        headers: { Accept: "application/json" },
+        body: new FormData(form),
       });
     } catch (err) {
       // Network/service error — still show a friendly message,
