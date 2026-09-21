@@ -529,6 +529,63 @@ img { max-width: 100%; display: block; }
 
 .case-nav a:hover, .case-nav a.active { color: var(--accent); }
 
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.testimonial {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 22px 26px;
+  margin-top: 24px;
+  max-width: 640px;
+}
+
+.testimonials-grid .testimonial { margin-top: 0; max-width: none; }
+
+.testimonial-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.testimonial-link:hover { color: var(--accent); }
+
+.testimonial-stars {
+  color: #f5c518;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.testimonial-quote {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.testimonial-author {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0;
+}
+
+.testimonial-author span {
+  font-weight: 400;
+  color: var(--text-dim);
+}
+
 .case-back {
   display: inline-flex;
   align-items: center;
@@ -597,6 +654,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 860px) {
   .skills-grid { grid-template-columns: 1fr; gap: 8px; }
   .portfolio-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {
